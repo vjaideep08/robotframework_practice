@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20211004 09:16:22.085" rpa="false" schemaversion="2">
+<suite id="s1" name="Testfact" source="D:\ROBOT_FRAMEWORK_SEP27\WEB_AUTOMATION\factorial\testfact.robot">
+<test id="s1-t1" name="Calling function from python">
+<kw name="custom keyword" library="fac">
+<var>${value}</var>
+<arg>${5}</arg>
+<msg timestamp="20211004 09:16:22.137" level="INFO">${value} = 120</msg>
+<status status="PASS" starttime="20211004 09:16:22.137" endtime="20211004 09:16:22.137"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>factorial(n)</arg>
+<arg>factorial(n)</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211004 09:16:22.138" endtime="20211004 09:16:22.139"/>
+</kw>
+<status status="PASS" starttime="20211004 09:16:22.136" endtime="20211004 09:16:22.139"/>
+</test>
+<status status="PASS" starttime="20211004 09:16:22.088" endtime="20211004 09:16:22.140"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testfact">Testfact</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

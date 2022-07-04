@@ -1,0 +1,21 @@
+
+
+tagging
+keyword tag
+
+
+how to do assertion....
+
+variable files
+
+
+for sequential---> robot TestCases\
+
+
+
+
+
+
+
+
+

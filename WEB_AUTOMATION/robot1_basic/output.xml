@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210930 14:18:14.880" rpa="false" schemaversion="2">
+<suite id="s1" name="Tc1" source="C:\Users\EVEEVOB\PROJECTS\ROBOT_FRAMEWORK_27-09-2021\robot1\TESTCASES\tc1.robot">
+<test id="s1-t1" name="TestCase1">
+<kw name="Log" library="BuiltIn">
+<arg>hello world</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:18:14.955" level="INFO">hello world</msg>
+<status status="PASS" starttime="20210930 14:18:14.954" endtime="20210930 14:18:14.955"/>
+</kw>
+<status status="PASS" starttime="20210930 14:18:14.952" endtime="20210930 14:18:14.956"/>
+</test>
+<status status="PASS" starttime="20210930 14:18:14.885" endtime="20210930 14:18:14.959"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc1">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211003 21:08:11.898" rpa="false" schemaversion="2">
+<suite id="s1" name="Tc1" source="C:\Users\EVEEVOB\PROJECTS\ROBOT_FRAMEWORK_SEP-27\robot_web\TestCases\tc1.robot">
+<test id="s1-t1" name="LogginginTestcase">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.nopcommerce.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211003 21:08:12.450" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20211003 21:08:12.450" endtime="20211003 21:08:18.195"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211003 21:08:18.198" level="INFO">Clicking link 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20211003 21:08:18.197" endtime="20211003 21:08:20.134"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>simplyjai08@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211003 21:08:20.138" level="INFO">Typing text 'simplyjai08@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20211003 21:08:20.137" endtime="20211003 21:08:20.415"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211003 21:08:20.417" level="INFO">Typing text '123456' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20211003 21:08:20.417" endtime="20211003 21:08:20.641"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211003 21:08:20.642" level="INFO">Clicking link 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211003 21:08:20.887" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211003 21:08:20.684" endtime="20211003 21:08:20.888"/>
+</kw>
+<msg timestamp="20211003 21:08:20.926" level="FAIL">Link with locator 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button' not found.</msg>
+<status status="FAIL" starttime="20211003 21:08:20.642" endtime="20211003 21:08:20.926"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211003 21:08:20.930" endtime="20211003 21:08:20.930"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test Done</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20211003 21:08:20.932" endtime="20211003 21:08:20.932"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20211003 21:08:20.932" endtime="20211003 21:08:20.933"/>
+</kw>
+<status status="FAIL" starttime="20211003 21:08:12.450" endtime="20211003 21:08:20.934">Link with locator 'xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button' not found.</status>
+</test>
+<status status="FAIL" starttime="20211003 21:08:11.902" endtime="20211003 21:08:20.937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tc1">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

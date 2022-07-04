@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20211006 21:25:25.357" rpa="false" schemaversion="2">
+<suite id="s1" name="Patch Request" source="D:\ROBOT_FRAMEWORK_SEP27\API_AUTOMATION\TestCases\patch_request.robot">
+<test id="s1-t1" name="Modifying_the_single_data(Patch request)">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysession4</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20211006 21:25:25.649" level="INFO">Creating Session using : alias=mysession4, url=http://127.0.0.1:8000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20211006 21:25:25.649" endtime="20211006 21:25:25.649"/>
+</kw>
+<kw name="keyword_for_patch">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${body}</var>
+<arg>firstname=jaydeep</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20211006 21:25:25.649" level="INFO">${body} = {'firstname': 'jaydeep'}</msg>
+<status status="PASS" starttime="20211006 21:25:25.649" endtime="20211006 21:25:25.649"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${header}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20211006 21:25:25.649" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20211006 21:25:25.649" endtime="20211006 21:25:25.649"/>
+</kw>
+<kw name="PATCH On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>mysession4</arg>
+<arg>/api/information/${id}/</arg>
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+<doc>Sends a PATCH request on a previously created HTTP Session.</doc>
+<msg timestamp="20211006 21:25:25.788" level="INFO">PATCH Request : url=http://127.0.0.1:8000/api/information/20/ 
+ path_url=/api/information/20/ 
+ headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '17'} 
+ body=firstname=jaydeep 
+ </msg>
+<msg timestamp="20211006 21:25:25.788" level="INFO">PATCH Response : url=http://127.0.0.1:8000/api/information/20/ 
+ status=400, reason=Bad Request 
+ headers={'Date': 'Wed, 06 Oct 2021 15:55:25 GMT', 'Server': 'WSGIServer/0.2 CPython/3.9.4', 'Content-Type': 'application/json', 'Vary': 'Accept, Cookie', 'Allow': 'GET, PUT, PATCH, DELETE, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '73', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin'} 
+ body={"detail":"JSON parse error - Expecting value: line 1 column 1 (char 0)"} 
+ </msg>
+<msg timestamp="20211006 21:25:25.788" level="FAIL">HTTPError: 400 Client Error: Bad Request for url: http://127.0.0.1:8000/api/information/20/</msg>
+<status status="FAIL" starttime="20211006 21:25:25.649" endtime="20211006 21:25:25.788"/>
+</kw>
+<status status="FAIL" starttime="20211006 21:25:25.649" endtime="20211006 21:25:25.788"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211006 21:25:25.788" endtime="20211006 21:25:25.788"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211006 21:25:25.795" endtime="20211006 21:25:25.795"/>
+</kw>
+<status status="FAIL" starttime="20211006 21:25:25.649" endtime="20211006 21:25:25.795">HTTPError: 400 Client Error: Bad Request for url: http://127.0.0.1:8000/api/information/20/</status>
+</test>
+<status status="FAIL" starttime="20211006 21:25:25.372" endtime="20211006 21:25:25.795"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Patch Request">Patch Request</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
